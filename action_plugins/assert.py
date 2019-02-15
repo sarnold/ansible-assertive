@@ -32,6 +32,8 @@ class ActionModule(ActionBase):
         msg = None
         if 'msg' in self._task.args:
             msg = self._task.args['msg']
+        elif 'fail_msg' in self._task.args:
+            msg = self._task.args['fail_msg']
 
         # make sure the 'that' items are a list
         thats = self._task.args['that']
