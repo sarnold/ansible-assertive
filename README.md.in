@@ -10,7 +10,25 @@ This project contains two [Ansible][] plugins:
 ## Supported Ansible versions
 
 These plugins are tested with Ansible versions 2.2.3.0 and 2.3.1.0 and
-with the current `devel` branch.
+with the current `devel` branch (also recently tested with 2.7.5 and
+Python 3.6).
+
+## Installing external plugins
+
+In spite of all the bizarre/conflicting answers on the Intarweb, you can
+easily install external plugins using the paths ansible already knows about
+and not add an extra plugin path to the ansible.cfg file (unless you want to).
+
+Feel free to use the (local) config below, but if you'd rather install it for
+all users, then the following path is automatically searched by named subdirectory
+for extra plugins of all types:
+
+- `/usr/share/ansible/plugins/action/`
+- `/usr/share/ansible/plugins/callback/`
+
+Note how `action_plugins` becomes 2 directories: `plugins/action/`.
+
+Just copy each plugin file to the appropriate subdirectory.
 
 ## About the assert module
 
