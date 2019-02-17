@@ -301,5 +301,5 @@ timing:
 ## Build status
 
 <!-- lint:disable -->
-[![Build Status](https://travis-ci.org/larsks/ansible-assertive.svg?branch=master)](https://travis-ci.org/larsks/ansible-assertive)
+[![Build Status](https://travis-ci.org/sarnold/ansible-assertive.svg?branch=master)](https://travis-ci.org/larsks/ansible-assertive)
 <!-- lint:enable -->
