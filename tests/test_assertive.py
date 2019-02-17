@@ -6,6 +6,7 @@ import tempfile
 import unittest
 import yaml
 
+
 class TestAssertive(unittest.TestCase):
     def setUp(self):
         self.workspace = tempfile.mkdtemp(prefix='workspace')

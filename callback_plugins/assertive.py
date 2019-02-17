@@ -68,8 +68,8 @@ class CallbackModule(CallbackModule_default):
             self.group['name'] = name
 
     def process_assert_result(self, result, skipped=False):
-        '''process the results from a single assert: action.  a single 
-        assert: may contain multiple tests.'''
+        '''process the results from a single assert: action.  a single
+           assert: may contain multiple tests.'''
 
         hostname = result._host.get_name()
         if hostname not in self.group['hosts']:
