@@ -1,13 +1,14 @@
 language: python
 python:
-    - 2.7
     - 3.6
 
 notifications:
     email: false
 
 env:
-  - ANSIBLE_VERSION=2.7.5
+  - ANSIBLE_VERSION=devel
+  - ANSIBLE_VERSION=stable-2.7
+  - ANSIBLE_VERSION=stable-2.5
 
 before_install:
   - pip install tox
