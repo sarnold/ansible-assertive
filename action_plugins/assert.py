@@ -21,7 +21,6 @@ from ansible.errors import AnsibleError
 from ansible.playbook.conditional import Conditional
 from ansible.plugins.action import ActionBase
 from ansible.module_utils.six import string_types
-from ansible.module_utils.parsing.convert_bool import boolean
 
 
 class ActionModule(ActionBase):
